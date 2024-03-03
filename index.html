@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VinTage Vibe</title>
+    <!-- daisy -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="mulish container mx-auto lg:px-24 px-8 my-32">
+    <header class="container mx-auto lg:px-24 px-8 my-32">
+        <nav>
+            <div class="navbar bg-base-100 flex-col lg:flex-row">
+                <div class="flex-1 py-5">
+                  <a class="btn btn-ghost text-xl font-extrabold rounded-full bg-[#c0c1ee]"><span class="text-[#797DFC]">VinTage</span> Vibe</a>
+                </div>
+                <div class="flex-none lg:gap-5">
+                 
+                    <div tabindex="0" role="button" class="btn btn-ghost  btn-circle avatar border border-gray-300 p-2">
+                      <div class="w-10 ">
+                        <img alt="Tailwind CSS Navbar component" src="images/Vector (3).png" />
+                      </div>
+                    </div>
+
+                    <div tabindex="0" role="button" class=" btn btn-ghost btn-circle avatar border border-gray-300 p-2">
+                        <div class="w-10 ">
+                          <img id="edit" alt="Tailwind CSS Navbar component" src="images/edit.png" />
+                        </div>
+                      </div>
+
+                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar border border-gray-300 p-2">
+                        <div class="w-10 ">
+                          <img alt="Tailwind CSS Navbar component" src="images/add.png" />
+                        </div>
+                      </div>
+
+                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar border border-gray-300 p-2">
+                        <div class="w-24 ">
+                          <img alt="" src="images/flag.png" />
+                        </div>
+                      </div>
+
+                      <div class="form-control">
+                        <button class="btn rounded-full bg-[#797DFC] text-white">Sign In</button>
+                  </div>                                 
+                </div>
+              </div>
+        </nav>
+
+        <!-- banner -->
+        <section class="py-10 w-auto">
+            <div class="bg-[url(images/bgbanner.png)] bg-[#12132D] bg-no-repeat bg-center bg-[rgba(3, 7, 18, 0.5) rgba(3, 7, 18, 0)] h-[550px] rounded-3xl flex px-6" style="background-size: cover;">
+
+              <div class="flex flex-col lg:flex-row gap-52 py-28 p lg:px-24">
+                <div class="">
+                    <h1 class="text-white text-xl lg:text-4xl font-extrabold py-5">Welecome to the</h1>
+                    <h1 class="text-white text-xl' lg:text-6xl font-extrabold"><span class="text-[#797DFC]">VinTage</span> Vibe</h1>
+                    <p class="lg:text-xl lg:font-medium text-white py-5 ">Share your favorite opinion and win and wp
+                        <br>forum coffee mug!
+                    </p>
+                    <label class="input input-bordered flex flex-col lg:flex-row items-center lg:justify-between gap-5 lg:gap-2  px-10 rounded-full w-52 lg:w-auto">
+                        <input id="search-field" type="text" class="grow py-2" placeholder="Search here anything" />
+                        <span onclick="handleSearch()" class="btn w-32 rounded-full">Search</span>
+                      </label>
+                </div> 
+
+
+
+                <div class="px-0 lg:p-10 my-16 bg-white w-72 h-56 rounded-3xl">
+                  <table class="w-[70%] lg:w-[100%] text-lg font-medium">
+                    <tr >
+                      <td>Registered Useres</td>
+                      <td>01</td>
+                    </tr>
+
+                    <tr>
+                      <td>Forum</td>
+                      <td>05</td>
+                    </tr>
+
+                    <tr>
+                      <td>Topics</td>
+                      <td>01</td>
+                    </tr>
+                    <tr>
+                      <td>Replies</td>
+                      <td>01</td>
+                    </tr>
+                  </table>
+                    </div>
+                </div>
+            </div>
+              </div>
+        </section>
+
+    </header>
+    <main>
+      <!-- Let's Discuss section -->
+      <section>
+        <div class="flex justify-center py-32 lg:py-0">    
+          <div class="text-center lg:w-3/5">
+          <h1 class="font-extrabold text-3xl ">Let's Discuss</h1>
+          <p class="text-lg font-normal opacity-90">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+      </div>
+
+      
+      <div class="flex flex-col lg:flex-row gap-5 py-10 ">
+
+        <!-- cards -->
+       <div id="post-container" class="flex flex-col gap-10">
+       
+
+      
+
+    </div>
+
+
+        <div class="bg-[#12132D0D] rounded-2xl p-5 h-fit">
+          <div class="flex justify-between pb-4  text-xl">
+            <h1 class="font-extrabold">Title</h1>
+            <p class="opacity-90 text-base">Mark as read(<span>4</span>)</p>
+          </div>
+
+          <div class="flex gap-5 bg-white p-5 rounded-xl">
+            <p class="text-base font-semibold">10 Kids Unaware of Their Halloween Costume</p>
+            <img class="w-8 h-8" src="images/eye.png" alt="">
+            <p class="opacity-90">1558</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      </section>
+
+      <!-- Join forum section -->
+      <section class="bg-[#12132D] flex flex-col lg:flex-row p-5 rounded-2xl">
+        <div class="lg:w-2/3 lg:p-20">
+          <h1 class="text-white text-lg font-extrabold py-5">Join Our Forum</h1>
+          <p class=" pb-5 opacity-90 text-white">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app.</p>
+          <button class="btn btn-wide rounded-full bg-[#797DFC] text-white border-none py-5">Wide</button>
+          </div>
+          <div class="border border-gray-600 border-dashed border-b-0 py-5">
+            <img class="w-40 h-40 lg:w-auto lg:h-auto" src="images/joinforum.png" alt="">
+          </div>
+
+        </div>
+        
+      </section>
+
+
+      <!-- Latest Post -->
+      <section class="py-32">
+        <div class="flex justify-center ">    
+          <div class="text-center lg:w-3/5">
+          <h1 class="font-extrabold text-3xl ">Latest Poats</h1>
+          <p class="text-lg font-normal opacity-90">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+      </div>
+
+      <!-- card section -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 py-10">
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Shoes!
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Fashion</div> 
+              <div class="badge badge-outline">Products</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </section>
+
+    </main>
+    <footer>
+
+      <footer class="footer footer-center p-10 text-primary-content bg-[#F3F3F5] text-black">
+        <aside>
+          <p class="font-extrabold text-lg">
+            <span class="text-[#797DFC]">VinTage</span> Vibe 
+          </p>
+          <p class="opacity-80">This is Vintage Vibe Footer</p> 
+          </aside> 
+        <nav>
+          <div class="grid grid-flow-col gap-4 text-black">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </nav>
+        <p class="opacity-80">Copyright © 2024 - All right reserved</p>
+      </footer>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
