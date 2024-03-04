@@ -11,6 +11,8 @@ function showElementById(elementId) {
 let veiwPageCount = 0;
 
 
+
+
 const loadPostSearch = async (searchText) => {
   const res = await fetch(
     `https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchText}`
@@ -100,13 +102,31 @@ const displayPosts = (posts) => {
     
     
   });
+  // hide loading spinner
+  spinner(false);
 };
 
 const handleSearch = () => {
+  spinner(true)
   const searchField = document.getElementById("search-field");
   const searchText = searchField.value;
   loadPostSearch(searchText);
+  
 };
+
+const spinner = (isLoading) =>{
+  const spinner = document.getElementById('loading');
+  if(isLoading){
+    spinner.classList.remove('hidden');
+    setTimeout(() => {
+      spinner.classList.add('hidden');
+    }, 2000);
+  }
+  else{
+    spinner.classList.add('hidden')
+  }
+  
+}
 
 loadPost();
 
