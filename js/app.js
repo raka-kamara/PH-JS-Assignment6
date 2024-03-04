@@ -56,7 +56,7 @@ const displayPosts = (posts) => {
   posts.forEach((post) => {
 
     const postCard = document.createElement("div");
-    postCard.classList = `p-5 bg-[#12132D0D] rounded-2xl `;
+    postCard.classList = `p-5 bg-[#12132D0D] rounded-2xl card shadow`;
 
    
 
@@ -137,7 +137,7 @@ const displayLatestPosts = (posts) =>{
 
 
     const postCard = document.createElement("div");
-    postCard.classList = `grid grid-cols-1 lg:grid-cols-3 py-10 `;
+    postCard.classList = `py-10 `;
 
    
 
